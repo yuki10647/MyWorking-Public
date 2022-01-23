@@ -1,0 +1,20 @@
+Numpy公式ドキュメント
+　　http://www.numpy.org
+
+Scipy公式ドキュメント
+　　http://www.scipy.org/
+  
+pandas公式ドキュメント
+　　http://pandas.pydata.org
+
+matplotlib公式ドキュメント
+　　https://matplotlib.org/stable/index.html
+  
+Seaborn公式ドキュメント
+　　http://seaborn.pydata.org
+
+scikit-learn公式ドキュメント
+　　http://scikit-learn.org/
+
+
+
