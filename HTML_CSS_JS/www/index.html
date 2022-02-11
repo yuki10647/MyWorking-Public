@@ -1,10 +1,32 @@
+<!-- http://jquery.com/download/ -->
+<!-- http://code.jquery.com/jquery/ -->
+<!-- https://bxslider.com/install/ -->
+
 <!DOCTYPE html>
 <html lang="ja">
     <head>
         <meta charset="utf-8">
-        <title>ページのタイトル</title>
+        <title>komorikomasya</title>
+        <meta name="description" content="komorikomasyaは3人の活動を掲載しているサイトです">
         <link rel="stylesheet" href="common/css/style.css">
         <link rel="stylesheet" href="common/css/normalize.css">
+
+        <!-- javascript ファイル-->
+        <script src="common/js/jquery-1.10.1.min.js"></script>
+        <script src="common/js/jquery.bxslider/jquery.bxslider.js"></script>
+        <link rel="stylesheet" href="common/js/jquery.bxslider/jquery.bxslider.css">
+
+        <!-- bxslider -->
+        <script>
+            $(document).ready(function(){
+              $('.bxslider').bxSlider({
+                  auto: true,
+                  speed: 1000,
+                  pause: 4000
+              });
+            });
+        </script>
+
     </head>
     
     <body>
@@ -15,7 +37,7 @@
 
                 <nav class="globalNavi">
                     <ul>
-                        <li><a href="index.html">ホーム</a></li>
+                        <li class="current"><a href="index.html">ホーム</a></li>
                         <li><a href="about/index.html">私たちについて</a></li>
                         <li><a href="portfolio/index.html">作ったもの</a></li>
                         <li><a href="contact/index.html">お問い合わせ</a></li>
@@ -24,8 +46,78 @@
             </header>
 
             <div id="pageBody">
-                
+                <section class="mainVisual">
+                    <ul class="bxslider">
+                        <li>
+                            <div class="mainVisualText">
+                                <h1>バッタになりたい魔法使い</h1>
+                                <p>Web仕掛け絵本<br>
+                                   合言葉は、バッタになっちゃえ!!!!</p>
+                            </div>
+        
+                            <img src="images/mainVisual_img_03.jpg" width="980" height="500" alt="">
+                        </li>
+
+                        <li>
+                            <div class="mainVisualText">
+                                <h1>WordPress<br>デザインワークブック</h1>
+                                <p>本格的Webサイトを作る人向け</p>
+                            </div>
+        
+                            <img src="images/mainVisual_img_02.jpg" width="980" height="500" alt="">
+                        </li>
+
+                        <li>
+                            <div class="mainVisualText">
+                                <h1>Cafe Debut</h1>
+                                <p>baserCMS カフェサイト用テーマ<br>
+                                   テーマコンテストテーマ賞受賞</p>
+                            </div>
+        
+                            <img src="images/mainVisual_img_01.jpg" width="980" height="500" alt="">
+                        </li>
+                    </ul>
+                </section>    
+
+                <section class="portfolioIndex">
+                    <article>
+                        <a href="portfolio/03.html"><img src="portfolio/images/index_03.jpg" width="300" height="163" alt=""></a>
+                        <h2><a href="portfolio/03.html">バッタになりたい魔法使い</a></h2>
+                        <p>Web仕掛け絵本<br>バッタになっちゃえ!!!!</p>
+                    </article>
+
+                    <article>
+                        <a href="portfolio/02.html"><img src="portfolio/images/index_02.jpg" width="300" height="163" alt=""></a>
+                        <h2><a href="portfolio/02.html">WordPressデザインワークブック</a></h2>
+                        <p>本格なウェブサイト向け書籍</p>
+                    </article>
+
+                    <article>
+                        <a href="portfolio/01.html"><img src="portfolio/images/index_01.jpg" width="300" height="163" alt=""></a>
+                        <h2><a href="portfolio/01.html">Cafe Debut</a></h2>
+                        <p>カフェサイト用テーマ</p>
+                    </article>
+                </section>
+
+                <section class="news">
+                    <h1>お知らせ</h1>
+                    <table>
+                        <tr>
+                            <th><time datetime="2013-10-01">2013.10.01</time></th>
+                            <td>書籍執筆中です。お楽しみに!!!!</td>
+                        </tr>
+
+                        <tr>
+                            <th><time datetime="2013-10-01">2013.10.01</time></th>
+                            <td>サイトをオープンしました<br>
+                                よろしくお願いします</td>
+                        </tr>
+                    </table>
+                </section>
             </div>  <!-- id="pageBody" 終了-->
+
+            <p class="pagetop"><a href="#page">ページの先頭へ戻る</a></p>
+
 
             <footer id="pageFoot">
                 <p id="copyright"><small>copyright&copy; 2013 @komorikomasya All Rights Reserved.</small></p>
