@@ -1,0 +1,72 @@
+<!-- https://github.com/gwenf/vue3-fcc-course-basic-product-cart-demo -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Vue3Basics2</title>
+        <style>
+            .box {
+                background-color: blueviolet;
+                height: 200px;
+                width: 200px;
+            }
+
+            .box.two {
+                background-color: red;
+            }
+
+            .box.three {
+                background-color: blue;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div id="app">
+            <button @click="toggleBox">Toggle Box</button>  <!-- click.prevent.stop-->
+            <test-box v-if="isVisible" />          <!-- v-show -->
+            <!--  <div v-else-if="isVisible2" class="box two"></div>  -->
+            <!--  <div v-else class="box three"></div>  -->
+        </div>
+
+        <script src="https://unpkg.com/vue@next"></script>
+        <script>
+            let app = Vue.createApp({
+                data: function(){
+                    return{
+                        //greeting: 'Hello Vue 3',
+                        isVisible: false
+                    }
+                },
+                methods: {
+                    toggleBox: function() {
+                        this.isVisible = !this.isVisible
+                    }
+                    //greet(greeting){
+                        //console.log(greeting)
+                    //}
+                },
+                updated() {
+                    console.log('updated')
+                }
+            })
+
+            app.component('test-box', {
+                template: `
+                    <div class="box"></div>
+                `,
+                created(){
+                    console.log('created')
+                },
+                mounted(){
+                    console.log('mounted')
+                },
+                unmounted(){
+                    console.log('unmounted')
+                }
+            })
+
+            app.mount('#app')
+        </script>
+    </body>
+</html>
