@@ -1,0 +1,9 @@
+参考にした書籍：作りながら学ぶ HTML/CSS デザインの教科書
+
+利用したサイト：
+http://jquery.com/download/  (jquery公式サイト)
+http://code.jquery.com/jquery/  (jquery公式サイト)
+https://bxslider.com/install/  (bxsliderインストール)
+
+https://www.google.co.jp/ (google お問い合わせフォームを利用)
+https://pixlr.com/jp/　(写真を切り取りなどする)
