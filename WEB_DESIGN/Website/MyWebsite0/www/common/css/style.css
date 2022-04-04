@@ -1,13 +1,7 @@
-/* http://midashi-maker.v-colors.com/ */
-/* http://www.w3.org/TR/html5/syntax.html#named-caracter-references  特殊文字*/ 
-/* http://icomoon.io/  アイコン*/
-/* http://www.google.com/fonts/     文字フォント*/
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap'); /*google fonts*/
 
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap');
-
-body { 
-        color: #333333; 
-        /*background-image: url("../images/bg1.png");*/
+body {  
+        background-image: url("../images/bg1.png");
         /*background-image: url("../images/bg2.png");
           background-repeat: repeat-x;
           background-repeat: repeat-y; 
@@ -34,7 +28,7 @@ a:hover {
 .pagetop {
         font-size: 12px;
         text-align: right;
-        margin-top: 30px;
+        margin-top: 30px;   /**/
 }
 
 .pagetop a {
@@ -51,24 +45,24 @@ a:hover {
 }
 
 /*ページヘッダー*/
-#pageHead #siteTitle { /*idの指定*/
+#pageHead #siteTitle {
         font-size: 30px;
-        line-height: 1.2;
+        line-height: 1.2;  /**/
         margin-bottom: 0px;
         font-family: 'Playfair Display', serif;
 } 
 
 #pageHead #catchcopy {
         font-size: 12px;
-        line-height: 1.5;
+        line-height: 1.5; /**/
         margin-top: 5px;
 }
 
-/*グローバルナビ*/
+/*グローバルナビ*/  /*  超重要　*/
 #pageHead .globalNavi {
-        border: solid #CCCCCC;
+        border: solid #999966;
         border-width: 1px 0;
-        padding: 10px 0;
+        padding: 10px 0; /* 上下 左右 */
 }
 
 #pageHead .globalNavi ul {
@@ -86,7 +80,7 @@ a:hover {
         list-style: none;
         width: 245px;
         float: left;
-        border-left: solid 1px #CCCCCC;
+        border-left: solid 1px #999966;
         padding: 0 10px;
         box-sizing: border-box;
         text-align: center;
@@ -106,13 +100,13 @@ a:hover {
 }
 
 #pageHead .globalNavi ul li a:hover , #pageHead .globalNavi ul li.current a {
-        background-color: #F2F2E5;
+        background-color: #cacaa4;
 }
 
 
 /*ページフッター*/
 #pageFoot { 
-        border-top: solid 1px #CCCCCC;
+        border-top: solid 1px #999966;
         margin-top: 15px;
 }
 
@@ -124,25 +118,21 @@ a:hover {
 /*ページボディ*/
 #pageBody {                /*このままだとページボディ要素の高さが0 */
         margin-top: 30px;      
-        /*background-color: #FFCC66;*/
-        /*border: solid 10px #FF0000;*/
 }
 
 #pageBody:after {       /* clearfix */
         content: "";
-        clear: both; /*floatプロパティクリア*/
+        clear: both;  /*下2つの right と left を解消する*/
         display: block;  
 }
 
 #pageBodyMain { 
         width: 720px;
-        /*background-color: #66CCFF;*/
         float: left;
 } 
 
 #pageBodySub { 
         width: 220px;
-        /*background-color: #99FF66;*/
         float: right;
 } 
 
@@ -184,14 +174,11 @@ a:hover {
         font-size: 14px;
         line-height: 1.429;
         margin-bottom: 12px;
-        /*list-style-image : url("../images/ico_arrow.png")  下にずれる*/
         list-style-type: none;
         background-image: url("../images/ico_arrow.png");
         background-repeat: no-repeat;
         background-position: 0 8px;
         padding-left: 10px;
-
-
 }
 
 /* -----メインカラム内の装飾----- */
@@ -201,7 +188,7 @@ a:hover {
         line-height: 1.429; 
 }
 
-/*リスト*/
+/*リスト*/ /*footer and aside*/
 #pageBodyMain ul li { 
         font-size: 14px;
         list-style-type: square;
@@ -212,13 +199,13 @@ a:hover {
 #pageBodyMain table { 
         font-size: 14px;
         line-height: 1.429;
-        border: 1px solid #CCCCCC;
+        border: 1px solid #999966; /**/
         border-collapse: collapse;
         width: 100%; 
 }
 
 #pageBodyMain table th, #pageBodyMain table td { 
-        border: 1px solid #CCCCCC;
+        border: 1px solid #999966;
         padding: 5px 10px;
 }
 
@@ -243,9 +230,9 @@ figure {
 }
 
 /*見出し*/
-#pageBodyMain .pageTitle {  /*class名の指定*/
+#pageBodyMain .pageTitle {
         font-size: 26px;
-        background-color: #F2F2E5;
+        background-color: #cacaa4;
         padding: 5px 15px;
         line-height: 1.231;
         margin-top: 0; 
@@ -283,7 +270,7 @@ figure {
         padding-top: 15px; 
 }
 
-#pageBodyMain .articleDtaioBody{ 
+#pageBodyMain .articleDetailBody{ 
         margin: 30px 0; 
 }
 
@@ -293,9 +280,9 @@ figure {
         border: solid 1px #CCCCCC; 
 }
 
-#pageBodyMain .creditUnit:after {
+#pageBodyMain .creditUnit:after { /*clearfix*/
         content: "";
-        clear: both;
+        clear: both;  /* 下３つの解消 */
         display: block;
 }
 
@@ -318,7 +305,7 @@ figure {
         line-height: 1.5; 
 }
 
-/*センター寄せ画像*/
+/*センター寄せ画像*//*私たちについてのところ*/
 #pageBodyMain .imageCenter{
         text-align: center;
         border-bottom: 1px dotted #CCCCCC;
@@ -326,7 +313,7 @@ figure {
         margin: 30px 0;
 }
 
-/*ボタン*/
+/*ボタン*/ /*お問い合わせ*/
 #pageBodyMain .btn {
         text-align: center;
         padding-bottom: 20px;
@@ -368,7 +355,7 @@ figure {
 
 #pageBodyMain .articleList a:after {
         content: "";
-        clear: both;
+        clear: both; /* 下のright left */
         display: block;
 }
 
@@ -410,7 +397,7 @@ figure {
         vertical-align: bottom;
 }
 
-#pageBody .mainVisual .mainVisualText {
+#pageBody .mainVisual .mainVisualText { /* 画像内にテキストを入れ込む */
         position: absolute;
         left: 50px;
         bottom: 50px;
@@ -444,14 +431,14 @@ figure {
         position: relative;
 }
 
-/* 「作ったもの」INDEX */
+/* 「作ったもの」INDEX ホームの下の部分*/
 #pageBody .portfolioIndex {
         margin-top: 40px;
 }
 
 #pageBody .portfolioIndex:after {
         content: "";
-        clear: both;
+        clear: both; /* 3つ以上並べるときは下のleftのみとなる */
         display: block;
 }
 
@@ -495,11 +482,10 @@ figure {
         font-size: 14px;
         line-height: 1.429;
         border-bottom: 1px dotted #CCCCCC;
-        /*padding: 10px 0;*/
         vertical-align: top;
 }
 
-#pageBody .news table tr th {
+#pageBody .news table tr th { /*日付*/
         white-space: nowrap;
         padding-right: 30px;
 }
