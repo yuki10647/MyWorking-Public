@@ -1,0 +1,6 @@
+# https://www.morningstar.co.jp/ (モーニングスター)
+# https://web.fisco.jp/ (フィスコウェブ)
+# https://nanjamonja.net/archives/1257  (yfinance, yahoo_fin)
+# https://apissdiary.hatenablog.com/entry/2020/05/04/104247 (stooq + 株探)
+# https://kabutan.jp/ (株探)
+# https://jp.kabumap.com/ (株マップ.com)
